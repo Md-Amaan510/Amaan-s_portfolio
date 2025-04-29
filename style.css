@@ -111,7 +111,7 @@ nav ul li a.active{
         left: -100%;
         display: block;
         background: #111;
-        height: 88vh;
+        height: 100%;
         width: 50vw;
         justify-items: center;
         transition: all 0.3s ease;
