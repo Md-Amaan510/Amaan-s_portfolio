@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+  <body>
+        <form align="center">
+              <p class=' hhh'>login</p>
+              <section >
+                  <input class="input" type="username" placeholder="Username" required="">
+              </section>
+              <section >
+                  <input class="input" type="password" placeholder="password" required="">
+              </section>
+              <section>
+                    <button onclick="document.location='port.html'" type="submit" >Log in</button>
+              </section>
+         <div class="forget">
+               <a href="#">Forgotten Password?</a>
+         </div>
+         <div class="happy">
+             <div>Don't have an account' </div>
+             <a href="create.html"> Create new</a>
+         </div>
+        </form>
+  </body>
+</html><style>
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+  background: white;
+    height:100vh;
+    display: flex;
+   justify-content: center;
+    align-items:center;
+}
+div a{
+  text-decoration:none;
+  color:white;
+  align-content:center;  
+}
+div a:hover{
+  text-decoration:white underline ;
+  color:red;
+}
+form{
+ background-color:rgb(0,0,33);
+  backdrop-filter:blur(30px);
+    height:60vh;
+width:80vw;
+padding:20px 20px ;
+align:center;
+background:blur;
+background-size:cover;
+}
+div{
+  font-size:10px;
+}
+.happy{
+    margin-left:24%;
+    display:flex;
+}
+.input{
+    width:80%; 
+      padding: 10px 16px  10px 38px;
+        border-radius: 99px;
+         border:solid 3px black;  
+         background: rgb(255, 255, 255, 0.1);  
+         outline:none; 
+         caret-color: white;  
+         color: white; 
+          font-weight: 400;  
+          transition: 0.255; 
+}
+section input::placeholder{
+  color:white;
+}
+section{
+ margin-top:20px;
+}
+section button{
+  padding:5px 70px;
+  border:solid 2px black;
+  border-radius:90px;
+  background: gold;
+  backdrop-filter:blur(1px);
+}
+section button a{
+    font-size:20px;
+    color: black;
+    text-decoration: none;
+    font-weight:500;
+    pointer: cursor;
+}   
+.forget{
+  margin:20px 20px;
+  font-size:1rem;
+}
+.hhh{
+color:white;
+font-family:cursive;
+font-size:3rem;
+}
+.happy{
+  font-size:13px;
+  align:center;
+  margin-left:55px;
+}
+ .happy div{
+     color:white;
+ }     
+      </style>

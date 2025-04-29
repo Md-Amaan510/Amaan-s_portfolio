@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+font-family: 'poppins',sans-serif;
+background-color: aliceblue;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(0,0, 33);
+    color: white;
+    height: 80px;
+    width: 100vw;
+}
+nav .menu_btn i{
+    display: ;
+    font-size: 20px;
+    display: none;
+}
+nav ul{
+    display: flex; 
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    padding: 5px;
+    transition: all 0.3sec;
+}
+nav ul li a:hover,
+nav ul li a.active{
+    background: whitesmoke;
+    color: #111;
+    border: none;
+    padding: 5px;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+.left{
+    font-size: 1.2rem;
+}
+.firstsection{
+    display: flex;
+    justify-content: space-evenly;
+    height:65vh;
+    align-items: center;
+}
+.leftsection{
+    height:40vh;width: 25vw;
+    padding: 0px 45px;
+    margin: 10px;
+    font-size: 1.1lrem;
+    font-weight: 500;
+}
+ .rightsection{
+     height: 70vh;
+     display: grid;
+     justify-content: center;
+ }
+.rightsection img{
+    height: 50vh;
+    margin: 10px;
+}
+.purple{
+    color: darkblue;
+}
+#element{
+    color: darkblue;
+}
+.mid{
+    height: 35vh; width: 100vw;
+    background: rgb(0,0,33);
+    
+    }
+.mid .links{
+    height:15vh;
+    width:100vw;
+    background: aliceblue;
+   border: 1px black solid;
+}
+.mid .links ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.mid .links li a{
+    font-size: 25px;
+}
+#click{
+    display: none;
+}
+
+@media screen and ( max-width : 600px ){
+    nav .menu_btn i{
+        display: block;
+    }
+    nav ul{
+        margin: 40px 0px;
+        position: absolute;
+        top: 40px;
+        left: -100%;
+        display: block;
+        background: #111;
+        height: 88vh;
+        width: 50vw;
+        justify-items: center;
+        transition: all 0.3s ease;
+    }
+    
+    #click:checked~ul{
+    left: 0%;
+    }
+    #click:checked~.menu_btn i:before{
+        content:"\f00d";
+    }
+   nav ul li{
+       font-size: 1.5rem;
+       margin: 50px 0px;
+   }
+    nav ul li a:hover,
+    nav ul li a.active{
+        background: none;
+        color: cyan;
+    }
+    .firstsection{
+        height: 55vh;
+        flex-direction: column-reverse;
+        align-items:center;
+    }
+    .leftsection{
+        width: 70vw;
+    }
+    .rightsection img{
+        height: 30vh;
+    }
+}
